@@ -37,6 +37,7 @@ const TimtNew = (props) => {
 
   return (
     <div>
+      <h1>How are you feeling today?</h1>
       <form onSubmit = {handleSubmit}>
         <label htmlFor="mood">Mood:</label>
         <input id="mood" name="mood" value={input.mood} onChange={handleChange}/>
