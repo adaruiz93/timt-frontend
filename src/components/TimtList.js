@@ -2,7 +2,9 @@ import React from 'react'
 
 const TimtList = (props) => {
   return (
-    <h1>List</h1>
+    <div>
+       <p>List</p>
+    </div>
   )
 }
 

@@ -2,3 +2,9 @@ h1 {
   text-align: center;
   color: pink;
 }
+
+p {
+  text-align: center;
+  color: blue;
+  font-size: medium;
+}
