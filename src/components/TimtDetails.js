@@ -7,7 +7,7 @@ const TimtDetails = (props) => {
   const [loading, setLoading] = useState(true)
 
   const getTimts = async (id) => {
-    const foundTimt = await fetch(`http://localhost:9000/timt/${id}`)
+    const foundTimt = await fetch(`https://timt.herokuapp.com/timt/${id}`)
     const parsed = await foundTimt.json()
     setTimts(parsed)
     setLoading(false)

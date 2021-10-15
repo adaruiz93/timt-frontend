@@ -9,7 +9,7 @@ const TimtList = (props) => {
 
   const getTimts = async () => {
     try {
-      const allTimts = await fetch('http://localhost:9000/timt')
+      const allTimts = await fetch('https://timt.herokuapp.com/timt')
       const parsed = await allTimts.json()
       setTimts(parsed)
     } catch (err) {
@@ -22,7 +22,7 @@ const TimtList = (props) => {
       const config = {
         method: 'DELETE'
       }
-      const deleteTimt = await fetch(`http://localhost:9000/timt/${id}`, config)
+      const deleteTimt = await fetch(`https://timt.herokuapp.com/timt/${id}`, config)
       const parsed = await deleteTimt.json()
       const updatedTimt = timts.filter(timts => timts._id !== parsed._id)
       setTimts(updatedTimt)
@@ -39,7 +39,9 @@ const TimtList = (props) => {
     <div>
       <Table responsive className="list">
        <thead>
+            
           <tr className="th">
+            <th>Name</th>
             <th>Mood</th>
             <th>Comment</th>
           </tr>
@@ -47,6 +49,7 @@ const TimtList = (props) => {
         <tbody>
         {timts && timts.map(timt => (
             <tr key={timts._id}>
+              <td>{timt.name}</td>
              <td><Link to={`/timt/${timt._id}`} className="link">{timt.mood}</Link></td>
               <td>{timt.comment}</td>
               <FontAwesomeIcon icon="fa-regular fa-trash-can" />

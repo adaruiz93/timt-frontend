@@ -12,7 +12,7 @@ const TimtEdit = (props) => {
  const getTimts = async (id) => {
    try {
      const id = props.match.params.id
-     const foundTimt = await fetch(`http://localhost:9000/timt/${id}`)
+     const foundTimt = await fetch(`https://timt.herokuapp.com/timt/${id}`)
      const parsed = await foundTimt.json()
      setInput(parsed)
      setLoading(false)
@@ -31,7 +31,7 @@ const TimtEdit = (props) => {
      }
    }
  
-   const updateTimt = await fetch(`http://localhost:9000/timt/${id}`, config)
+   const updateTimt = await fetch(`https://timt.herokuapp.com/timt/${id}`, config)
    const parsed = await updateTimt.json()
    props.history.push(`/timt/${id}`)
  }

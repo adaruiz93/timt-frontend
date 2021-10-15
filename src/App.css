@@ -51,3 +51,7 @@ p {
 .delete {
   color: red;
 }
+
+.bg-myNav {
+  background-color: lavender;
+}

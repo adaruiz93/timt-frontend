@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 const TimtNew = (props) => {
   const initialState = {
+    name: '',
     mood: '',
     comment: ''
   }
@@ -21,7 +22,7 @@ const TimtNew = (props) => {
           'Content-Type': 'application/json'
         }
       }
-      const createdTimt = await fetch('http://localhost:9000/timt', config)
+      const createdTimt = await fetch('https://timt.herokuapp.com/timt/', config)
       const parsed = await createdTimt.json()
       props.history.push('/timt')
     } catch (err) {
@@ -39,6 +40,9 @@ const TimtNew = (props) => {
     <div>
       <h1>How are you feeling today?</h1>
       <form onSubmit = {handleSubmit}>
+        <label htmlFor="name">Name:</label>
+        <input id="name" name="name" value={input.name} onChange={handleChange}/>
+
         <label htmlFor="mood">Mood:</label>
         <input id="mood" name="mood" value={input.mood} onChange={handleChange}/>
         
