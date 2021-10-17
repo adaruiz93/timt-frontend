@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Table from 'react-bootstrap/Table'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Button from 'react-bootstrap/Button'
 
 const TimtList = (props) => {
   const [timts, setTimts] = useState([])
@@ -37,9 +35,8 @@ const TimtList = (props) => {
 
   return (
     <div>
-      <Table responsive className="list">
-       <thead>
-            
+      <Table responsive striped bordered hover responsive="sm">
+       <thead className="tablehead">
           <tr className="th">
             <th>Name</th>
             <th>Mood</th>
@@ -52,8 +49,7 @@ const TimtList = (props) => {
               <td>{timt.name}</td>
              <td><Link to={`/timt/${timt._id}`} className="link">{timt.mood}</Link></td>
               <td>{timt.comment}</td>
-              <FontAwesomeIcon icon="fa-regular fa-trash-can" />
-              <td onClick={()=> handleDelete(timt._id)} className="delete">delete</td>
+              {/* <td onClick={()=> handleDelete(timt._id)} className="delete">delete</td> */}
             </tr>
           ))}
         </tbody>

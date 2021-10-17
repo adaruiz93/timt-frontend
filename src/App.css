@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 
 body{
   background-color: #e3d8f1;
@@ -18,12 +19,11 @@ p {
 
 .list {
   color: black;
-  padding: 50px;
-  width:70%; 
-  margin-left:15%; 
-  margin-right:15%;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 75px;
   
 }
 
@@ -54,4 +54,12 @@ p {
 
 .bg-myNav {
   background-color: lavender;
+}
+
+.tablehead {
+background-color: blue;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
 }
