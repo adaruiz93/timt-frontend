@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
+import { Card } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
 
 const TimtDetails = (props) => {
   const currentId = props.match.params.id
@@ -20,12 +22,20 @@ const TimtDetails = (props) => {
     <>
     {
       loading ? <h3>Loading...</h3> :
-        <div>
-          <h1>{timts.mood}</h1>
+      <div>
+      <Card className="text-center">
+        <Card.Header className='details'>{timts.name}</Card.Header>
+        <Card.Body>
+        <Card.Title className='details'>{timts.mood}</Card.Title>
+        <Card.Text className='details'>
           {timts.comment}
-          <Link to='/timt'>Back</Link>
-          <Link to={`/timt/:id/edit`}>Edit</Link>
-        </div>
+        </Card.Text>
+        <Button className='details' variant="light" href="/timt">Back</Button>
+      </Card.Body>
+    <Card.Footer className='details' className="text-muted">2 days ago</Card.Footer>
+  </Card>
+
+      </div>
     }
     </>
   )

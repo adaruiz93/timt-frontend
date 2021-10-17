@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 const TimtNew = (props) => {
   const initialState = {
@@ -39,19 +41,24 @@ const TimtNew = (props) => {
   return (
     <div>
       <h1>How are you feeling today?</h1>
-      <form onSubmit = {handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input id="name" name="name" value={input.name} onChange={handleChange}/>
+      <Form onSubmit = {handleSubmit} className='form'>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label className='label'>Name</Form.Label>
+      <Form.Control id="name" name="name" value={input.name} onChange={handleChange} />
+      </Form.Group>
+	
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label className='label'>Mood</Form.Label>
+        <Form.Control id="mood" name="mood" value={input.mood} onChange={handleChange} />
+      </Form.Group>
 
-        <label htmlFor="mood">Mood:</label>
-        <input id="mood" name="mood" value={input.mood} onChange={handleChange}/>
-        
-        <label htmlFor="comment">Comment:</label>
-        <input id="comment" name="comment" value={input.comment} onChange={handleChange}/>
-
-        <input type="submit" value="Create a Post"/>
-      </form>
-      <Link to='/timt'>Previous Entries</Link>
+    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+      <Form.Label className='label'>Comment</Form.Label>
+      <Form.Control as="textarea" rows={3} id="comment" name="comment" value={input.comment} onChange={handleChange} />
+    </Form.Group>
+      <Button className='label' variant="outline-secondary" as="input" type="submit" value="Create Post" />
+      <Button className='label' variant="outline-secondary" href="/timt">Previous Entries</Button>
+    </Form>
     </div>
   )
 }

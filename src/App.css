@@ -3,7 +3,7 @@
 
 
 body{
-  background-color: #e3d8f1;
+  background-color: #F5F0F6;
 }
 
 h1 {
@@ -13,7 +13,6 @@ h1 {
 
 p {
   text-align: center;
-  color: blue;
   font-size: medium;
 }
 
@@ -53,13 +52,52 @@ p {
 }
 
 .bg-myNav {
-  background-color: lavender;
+  background-color: #385F71;
+  padding: 50px;
+  margin-bottom: 100px;
 }
 
 .tablehead {
 background-color: blue;
+
+
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
+}
+
+.quote {
+  color: #8F754F;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+.cardHeader {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+}
+
+.blockquote-footer{
+  font-family: 'Raleway', sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  color: #2B4162;
+}
+
+.details {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+ 
 }

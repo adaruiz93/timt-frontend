@@ -41,6 +41,7 @@ const TimtList = (props) => {
             <th>Name</th>
             <th>Mood</th>
             <th>Comment</th>
+            <th>Delete?</th>
           </tr>
         </thead>
         <tbody>
@@ -49,7 +50,7 @@ const TimtList = (props) => {
               <td>{timt.name}</td>
              <td><Link to={`/timt/${timt._id}`} className="link">{timt.mood}</Link></td>
               <td>{timt.comment}</td>
-              {/* <td onClick={()=> handleDelete(timt._id)} className="delete">delete</td> */}
+              <td onClick={()=> handleDelete(timt._id)} className="delete">delete</td>
             </tr>
           ))}
         </tbody>
