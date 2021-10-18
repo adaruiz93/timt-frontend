@@ -2,21 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body{
-  background-color: #F5F0F6;
-}
-
-h1 {
-  text-align: center;
-  color: pink;
+  background-color: white;
 }
 
 p {
   text-align: center;
-  font-size: medium;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .list {
-  color: black;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
   margin-left:auto; 
@@ -26,7 +21,7 @@ p {
 }
 
 .th{
-  color: #fe5d9f;
+  color: #FF729F;
   background: lavenderblush;
   text-align: center;
   margin-left:auto; 
@@ -36,24 +31,24 @@ p {
 }
 
 .link {
-  color: #fe5d9f;
+  color: #BC9EC1;
  text-align: end;
  text-decoration: none;
  font-family: 'Raleway', sans-serif;
  display: flex;
  justify-content: center;
  align-items: center;
- font-size: 25px;
+ font-size: 23px;
 }
 
 .delete {
-  color: red;
+  color: #BC9EC1;
+  font-size: 23px;
 }
 
 .bg-myNav {
-  background-color: #385F71;
-  padding: 50px;
-  margin-bottom: 100px;
+  background-color: #BC9EC1;
+  margin-bottom: 75px;
 }
 
 .logo {
@@ -92,5 +87,24 @@ p {
 .details {
   font-family: 'Raleway', sans-serif;
   font-size: 23px;
- 
+}
+
+.new {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.home {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 50px;;
+}
+
+.tlist {
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  color: #1F2232;
+
 }

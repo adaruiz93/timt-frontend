@@ -39,7 +39,7 @@ const TimtNew = (props) => {
 
   return (
     <div>
-      <h1>How are you feeling today?</h1>
+      <p className='new'>How are you feeling today?</p>
       <Form onSubmit = {handleSubmit} className='form'>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label className='label'>Name</Form.Label>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button'
+import Reminder from './Reminder'
 
 const TimtDetails = (props) => {
   const currentId = props.match.params.id

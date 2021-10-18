@@ -1,5 +1,5 @@
 import './App.css'
-import { Nav, Navbar, Container } from 'react-bootstrap'
+import { Nav, Navbar, Container, ButtonGroup } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import TimtDetails from './components/TimtDetails'
@@ -10,24 +10,28 @@ import TimtHome from './components/TimtHome'
 import LoginButton from './components/LoginButton'
 import LogoutButton from './components/LogoutButton'
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
+import Reminder from './components/Reminder'
 
 
 const App = () => {
     return (
       <div>
-        <Navbar bg="myNav" variant="dark" collapseOnSelect expand='md'>
+        <Navbar bg="myNav" variant="dark" collapseOnSelect expand='sm'>
           <Container>
             <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
             <NavbarCollapse id='responsive-navbar-nav'>
           <Navbar.Brand className="logo order-md-0 mx-5 order-1">
-            TIMT&hearts;
+            TIMT
           </Navbar.Brand>
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/timt/new">Log a Mood</Nav.Link>
             <Nav.Link href="/timt">View Entries</Nav.Link>
+            <ButtonGroup>
             <LoginButton />
             <LogoutButton />
+            <Reminder />
+            </ButtonGroup>
           </Nav>
           </NavbarCollapse>
           </Container>

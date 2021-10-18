@@ -47,9 +47,9 @@ const TimtList = (props) => {
         <tbody>
         {timts && timts.map(timt => (
             <tr key={timts._id}>
-              <td>{timt.name}</td>
+              <td className='tlist'>{timt.name}</td>
              <td><Link to={`/timt/${timt._id}`} className="link">{timt.mood}</Link></td>
-              <td>{timt.comment}</td>
+              <td className='tlist'>{timt.comment}</td>
               <td onClick={()=> handleDelete(timt._id)} className="delete">delete</td>
             </tr>
           ))}

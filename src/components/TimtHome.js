@@ -31,7 +31,7 @@ const TimtHome = (props) => {
 
   return (
   <div> 
-    <p>Welcome to This Is Me Trying, a place where you can keep track of your mental state</p>
+    <p className='home'>Welcome to This Is Me Trying, a place where you can keep track of your feelings and your mental health.</p>
     <Card className='text-center'>
       <Card.Header className="cardHeader">Your Quote of the Day</Card.Header>
       <Card.Body>
