@@ -1,0 +1,25 @@
+Setup
+
+- Create Wireframe
+- Create Repo for backend and frontend
+
+Frontend Planning
+
+- Create React App
+- Remove unecessary files
+- Set up App.js
+- Create components
+- Connect to the backend
+- Style
+
+
+Backend Planning
+- Create Express App
+- Make sure it connects to localhost
+- Create Models folder  
+- Create Schema
+- Create Controller File
+- Create Routes
+- Create database 
+- Check routes with Postman
+

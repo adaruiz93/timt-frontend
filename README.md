@@ -10,7 +10,7 @@
 <img src="https://i.ibb.co/Wg2f7bx/TIMTWireframe.jpg" alt="TIMTWireframe" border="0"></a>
   
   <h2>List of Technologies</h2>
-  <p>HTML, CSS, JavaScript, React, React Bootstrap, Axios, Surge to deploy the frontend, Heroku to deploy the backend, Express, Node.js, Auth0</p>
+  <p>HTML, CSS, JavaScript, React, React Bootstrap, Axios, Surge to deploy the frontend, Heroku to deploy the backend, Express, Node.js, Auth0, Postman</p>
   
 <h3>Quotes API Used</h3>
 https://api.quotable.io/random
