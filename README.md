@@ -18,7 +18,7 @@ https://api.quotable.io/random
 <h3>Link to TIMT</h3>
 <h5>Frontend</h5>
 https://timt.surge.sh/
-<h3>Backend</h3>
+<h5>Backend</h5>
 https://timt.herokuapp.com/timt
 
 
