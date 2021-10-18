@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
 body{
   background-color: #F5F0F6;
 }
@@ -55,12 +54,6 @@ p {
   background-color: #385F71;
   padding: 50px;
   margin-bottom: 100px;
-}
-
-.tablehead {
-background-color: blue;
-
-
 }
 
 .logo {
