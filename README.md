@@ -21,6 +21,8 @@ https://timt.surge.sh/
 <h5>Backend</h5>
 https://timt.herokuapp.com/timt
 
+<h3>Coolors Palette</h3>
+https://coolors.co/fde8e9-e3bac6-bc9ec1-596475-1f2232
 
   
   
