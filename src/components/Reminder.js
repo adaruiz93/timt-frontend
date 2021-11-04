@@ -28,7 +28,7 @@ const Reminder = ({ name, ...props }) => {
           <p>Crisis Text Line: Text HOME to 741741</p>
           <p>Black Emotional and Mental Health Collective: www.beam.community</p>
           <p>Asian Mental Health Collective: asianmhc.org</p>
-          <Button className='chat' variant="outline-info" size="sm" href='https://suicidepreventionlifeline.org/chat/'>Chat</Button>
+          <Button className='chat' variant="outline-info" size="sm" href='https://suicidepreventionlifeline.org/chat/' target="_blank">Chat</Button>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

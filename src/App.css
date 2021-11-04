@@ -99,7 +99,7 @@ p {
   text-align: center;
   font-size: 25px;
   font-family: 'Raleway', sans-serif;
-  padding-bottom: 50px;;
+  padding-bottom: 50px;
 }
 
 .tlist {
@@ -107,4 +107,9 @@ p {
   font-size: 23px;
   color: #1F2232;
 
+}
+
+.chat {
+  position: absolute;
+  left:45%;
 }
