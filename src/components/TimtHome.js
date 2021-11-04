@@ -32,21 +32,21 @@ const TimtHome = (props) => {
   return (
   <div> 
     <p className='home'>Welcome to This Is Me Trying, a place where you can keep track of your feelings and your mental health.</p>
-    <div className="card">
-    <Card className='text-center'>
-      <Card.Header className="cardHeader">Your Quote of the Day</Card.Header>
-      <Card.Body>
-        <blockquote className='blockquote mb-0'>
-          <p className="quote">{quote}</p>
-        <footer className='blockquote-footer'>
-          {author}
-          </footer>  
-           <Button size='sm' variant="outline-secondary" onClick={quoteAPI}>Inspire Me</Button>
-          </blockquote>
-        </Card.Body>
-      </Card>
+      <div class="card text-center">
+      <div class="card-header cardHeader">
+       Your Quote of the Day
       </div>
+      <div class="card-body">
+      <blockquote class="blockquote mb-0">
+      <p className="quote">{quote}</p>
+      <footer className='blockquote-footer'>
+          {author}</footer>
+          <Button size='sm' variant="outline-secondary" onClick={quoteAPI}>Inspire Me</Button>
+    </blockquote>
     </div>
+  </div>
+</div>
+
   )
 }
 

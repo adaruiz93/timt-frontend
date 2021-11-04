@@ -113,3 +113,8 @@ p {
   position: absolute;
   left:45%;
 }
+
+.card {
+  margin-left: 90px;      
+  margin-right: 90px;
+}
